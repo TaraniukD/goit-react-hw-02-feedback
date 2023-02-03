@@ -10,7 +10,6 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     <FeedbackDiv >
       {array.map( name => {
         return (
-          
           <FeedbackButtons key={name} type="button" name={name} onClick={onLeaveFeedback}>
            {name} <FeedbackSpan>{name === 'good' ?  <FcLike /> : name === 'neutral' ? <FcLikePlaceholder/> : <FcDislike/> }</FeedbackSpan> 
           </FeedbackButtons>
